@@ -31,18 +31,6 @@ za"
 def fun():
     return
 
-#Defining word scroll function (characters type out one at a time)
-def print_scroll(output):
-    #For loop (for every character in the output)
-    for char in output:
-        #print characters one at a time - not using new line every time
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        sleep(.02)
-        #sleep to create slight pause between character scroll
-
-    #empty print to create new line after statement
-    print()
 
 """
 .lower(): string -> lowercase
