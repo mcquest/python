@@ -9,6 +9,19 @@ to discover and adapt to their environment
 # Import time class to use functions in it 
 import time
 
+#Defining word scroll function (characters print out one at a time)
+def print_scroll(output):
+    #for every character in the output string
+    for char in output:
+        #print characters one at a time 
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        sleep(.02) #seconds
+
+
+    #empty print to create new line after statement
+    print()
+
 # Introductory decisions
 def Welcome():
     # Opening Line
@@ -27,9 +40,10 @@ def Welcome():
         time.sleep(8)
     # Incorrect input
     else:
-        # rerun the function
+        """rerun the function
         # (recursive statement
         #           - this type of function call typically has a different input than the original)
+        """
         Welcome()
 
 # Stage 1 
