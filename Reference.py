@@ -21,7 +21,6 @@ Function
 
 """
 
-import sys
 import time
 import random
 
