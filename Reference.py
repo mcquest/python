@@ -12,10 +12,17 @@ Statement
 Variable
 Loop
 Function
+
+
+(" ~~~~~~ "
+" ~~~~~~~ "
+" ~~~~~~~ ")
+
+
 """
 
 import sys
-from time import sleep
+import time
 import random
 
 #Comment """"""
@@ -29,6 +36,7 @@ za"
 
 #Function
 def fun():
+    time.sleep(5)
     return
 
 
@@ -63,7 +71,8 @@ print(list2)
 v7 = 100
 def funExample():
     l1 = 1
-    #print (v7)
+    global v7
+    print (v7)
 #global l1
 l1 = 8
 
