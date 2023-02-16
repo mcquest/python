@@ -82,6 +82,15 @@ if __name__ == '__main__':
     # run main()
     pass
 
+#Defining word scroll function (characters print out one at a time)
+def print_scroll(output):
+    #for every character in the output string
+    for char in output:
+        #print characters one at a time 
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        sleep(.02) #seconds
+
 """
 Truth tables
 """
