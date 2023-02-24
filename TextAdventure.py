@@ -9,11 +9,16 @@ to discover and adapt to their environment
 # Import time class to use functions in it 
 import time
 
+y = ["yes","Yes","y","okay","sure"]
+
     #empty print to create new line after statement
     print()
 
 # Introductory decisions
 def Welcome():
+    
+    print("Use" + y + "to answer yes.")
+    
     # Opening Line
     start = input("You are sitting outside on a bench and it starts to"
                 " rain, \n do you want to use your umbrella or go inside? (u/i) : ")
