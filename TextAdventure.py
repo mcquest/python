@@ -6,33 +6,52 @@ What happens when the script is run?:
 User is given a series of choices and must make decisions
 to discover and adapt to their environment
 """
-# Import time class to use functions in it 
+# Import time and system classes to use built in functions from it 
+import sys 
 import time
 
-y = ["yes","Yes","y","okay","sure"]
+ys = ["yes","Yes","y","okay","sure","...","..","."]
+choices = ["Choices -> "]
 
-    #empty print to create new line after statement
-    print()
+#empty print to create new line after statement
+print()
+
+#Defining word scroll function (characters print out one at a time)
+def print_scroll(output):
+    #for every character in the output string
+    for char in output:
+        #print characters one at a time 
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(.02) #seconds
 
 # Introductory decisions
 def Welcome():
-    
-    print("Use" + y + "to answer yes.")
+    global choices
+    s = ""
+    for y in ys:
+        s = s+y+".\n"
+    print("Welceome to an adventure through text...\n"
+          "Type one of the following then enter to answer yes:\n" + s)
     
     # Opening Line
-    start = input("You are sitting outside on a bench and it starts to"
-                " rain, \n do you want to use your umbrella or go inside? (u/i) : ")
+    start = input("\n You are sitting outside on a bench and it starts to"
+                " rain, \n do you want to use your umbrella or go inside? (Type: u or i) : ")
+    choices += start
     # Check user response to start with if statement
     if start == 'i':
         print("You get up and enter an abandoned super market...")
         # add a delay
-        time.sleep(4)
+        print (choices)
+        time.sleep(2)
         # function call for stage 1 logic
-        market1()
+        Market1()
     #  Opening umbrella user response
     elif start == 'u':
         print("The umbrella opens...")
-        time.sleep(8)
+        print (choices)
+        time.sleep(1)
+        Umbrella1()
     # Incorrect input
     else:
         """rerun the function
@@ -42,11 +61,15 @@ def Welcome():
         Welcome()
 
 # Stage 1 
-def market1():
+def Market1():
         # user response is inside1
-        inside1 = input("You see a dim light in the back left corner \n
+        inside1 = input("You see a dim light in the back left corner \n"
                         "and hear a muffled buzz coming from"
-                      "the back right. Investigate (L/R): ")
+                      "the back right. Investigate (left or right): ")
+
+def Umbrella1():
+    umbrain1 = input("\n Your umbrella opens preventing you from getting wet.\n"
+                     "Would you like to stand up? \n\n")
 
 Welcome()
 
