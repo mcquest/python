@@ -1,4 +1,4 @@
 # python
 Snakes and Stuff
 
-Core Projects in APCSP
+Core Projects examples from APCSP
