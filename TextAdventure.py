@@ -46,6 +46,7 @@ def Welcome():
         time.sleep(2)
         # function call for stage 1 logic
         Market1()
+
     #  Opening umbrella user response
     elif start == 'u':
         print("The umbrella opens...")
@@ -66,10 +67,15 @@ def Market1():
         inside1 = input("You see a dim light in the back left corner \n"
                         "and hear a muffled buzz coming from"
                       "the back right. Investigate (left or right): ")
+        if input == "left:
+            LeftO()
 
 def Umbrella1():
     umbrain1 = input("\n Your umbrella opens preventing you from getting wet.\n"
                      "Would you like to stand up? \n\n")
+
+def LeftO():
+    print("you have gone left")
 
 Welcome()
 
