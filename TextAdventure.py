@@ -1,4 +1,5 @@
 """
+Header Comment
 Example Text Adventure..
 Script Name: TextAdventure.py
 Coder Name: Charles 
@@ -6,22 +7,25 @@ What happens when the script is run?:
 User is given a series of choices and must make decisions
 to discover and adapt to their environment
 """
-# Import time and system classes to use built in functions from it 
+
+# Import time and system 
+# classes/libraries to use built in functions from it 
 import sys 
 import time
 
+#List of potential yes answers 
 ys = ["yes","Yes","y","okay","sure","...","..","."]
 choices = ["Choices -> "]
 
-#empty print to create new line after statement
+#empty print to create space
 print()
 
 #Defining word scroll function (characters print out one at a time)
-def print_scroll(output):
-    #for every character in the output string
-    for char in output:
+def print_scroll(o):
+    #for loop checking every character in the output string
+    for c in o:
         #print characters one at a time 
-        sys.stdout.write(char)
+        sys.stdout.write(c)
         sys.stdout.flush()
         time.sleep(.02) #seconds
 
@@ -67,15 +71,21 @@ def Market1():
         inside1 = input("You see a dim light in the back left corner \n"
                         "and hear a muffled buzz coming from"
                       "the back right. Investigate (left or right): ")
-        if input == "left:
-            LeftO()
+        if input == "left":
+            Left0()
+            
+        if input == "right":
+            Right0()
 
 def Umbrella1():
     umbrain1 = input("\n Your umbrella opens preventing you from getting wet.\n"
                      "Would you like to stand up? \n\n")
 
-def LeftO():
-    print("you have gone left")
+def Left0():
+    print("You have gone left...")
+    
+def Right0():
+    print()
 
 Welcome()
 
