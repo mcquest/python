@@ -52,3 +52,18 @@ With mod % and division
         num0 = "0" + num0
         i = i / 2
 """
+
+def Base10to2():
+    """
+    if(not bool(re.match(decimals, str(num)))):
+        return "num must be a decimal number string [0-9]."
+     """
+    num = input("Enter a number in Base 10 format to convert to base 2")
+    if(int(num) <= 1):
+        return num
+    binaryValue = ''
+    remainder = int(num)
+    while remainder > 0:
+        binaryValue = str(remainder % 2) + binaryValue
+        remainder = remainder // 2    
+    return binaryValue
