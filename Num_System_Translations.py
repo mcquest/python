@@ -1,5 +1,7 @@
 #mcquest
 #input one number system to output another
+
+# Potential solution 1
 def Base2to10():
     b =  input("Enter a binary number: ")
     j = 0
@@ -14,10 +16,12 @@ def Base2to10():
 
 #Base2to10()
 
+# Potential solution A
 def Base10to2Builtin():
     i = input("Enter an integer: ")
     print(bin(int(i)))
 
+# Potential solution B
 def Base10to2A():
     ii = input("Enter an integer: ")
     i = int(ii)
@@ -41,6 +45,7 @@ def Base10to2A():
     print(''.join(num0))
 Base10to2A()
 
+# Potential solution C start
 """
 With mod % and division
     if i % 2 == 0:
