@@ -1,7 +1,10 @@
 #mcquest
 #input one number system to output another
-
-# Potential solution 1
+"""
+TODO:
+ - Add comments
+ - Make more user friendly (list options, ask to enter another number)
+"""
 def Base2to10():
     b =  input("Enter a binary number: ")
     j = 0
@@ -16,12 +19,12 @@ def Base2to10():
 
 #Base2to10()
 
-# Potential solution A
 def Base10to2Builtin():
     i = input("Enter an integer: ")
     print(bin(int(i)))
 
-# Potential solution B
+#Base10to2Builtin()
+
 def Base10to2A():
     ii = input("Enter an integer: ")
     i = int(ii)
@@ -43,27 +46,22 @@ def Base10to2A():
             expCheck+=1
             lexp -= 1
     print(''.join(num0))
-Base10to2A()
 
-# Potential solution C start
-"""
-With mod % and division
-    if i % 2 == 0:
-        num0 = "0" + num0
-        i = i / 2
-"""
+#Base10to2A()
 
-def Base10to2():
-    """
-    if(not bool(re.match(decimals, str(num)))):
-        return "num must be a decimal number string [0-9]."
-     """
-    num = input("Enter a number in Base 10 format to convert to base 2")
-    if(int(num) <= 1):
-        return num
+
+"""
+With mod(remainder) % and division
+"""
+def Base10to2B():
+    i = input("Enter an integer: ")
+    if(int(i) <= 1):
+        print(i)
     binaryValue = ''
-    remainder = int(num)
+    remainder = int(i)
     while remainder > 0:
         binaryValue = str(remainder % 2) + binaryValue
         remainder = remainder // 2    
-    return binaryValue
+    print(binaryValue)
+
+Base10to2B()
