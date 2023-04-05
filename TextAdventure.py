@@ -14,7 +14,7 @@ import sys
 import time
 
 #List of potential yes answers 
-ys = ["yes","Yes","y","okay","sure","...","..","."]
+ys = ["yes", "Yes", "absolutely"]
 choices = ["Choices -> "]
 
 #empty print to create space
