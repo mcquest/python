@@ -6,6 +6,10 @@ Coder Name: Charles
 What happens when the script is run?:
 User is given a series of choices and must make decisions
 to discover and adapt to their environment
+
+TODO
++ Add 3-5 minutes of user experience
++ Besides printScroll Add relevant list that is iterated through and used in a function
 """
 
 # Import time and system 
@@ -21,7 +25,7 @@ choices = ["Choices -> "]
 print()
 
 #Defining word scroll function (characters print out one at a time)
-def print_scroll(o):
+def printScroll(o):
     #for loop checking every character in the output string
     for c in o:
         #print characters one at a time 
