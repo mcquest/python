@@ -24,14 +24,6 @@ choices = ["Choices -> "]
 #empty print to create space
 print()
 
-#Defining word scroll function (characters print out one at a time)
-def printScroll(o):
-    #for loop checking every character in the output string
-    for c in o:
-        #print characters one at a time 
-        sys.stdout.write(c)
-        sys.stdout.flush()
-        time.sleep(.02) #seconds
 
 # Introductory decisions
 def Welcome():
