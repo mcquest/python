@@ -17,8 +17,15 @@ TODO
 import sys 
 import time
 
+# Empty list
+e = []
+
+# Map list... 1 represents the player
+mp = [0,0,0,1,0,0,0,0]
+
 #List of potential yes answers 
 ys = ["yes", "Yes", "absolutely"]
+
 choices = ["Choices -> "]
 
 #empty print to create space
