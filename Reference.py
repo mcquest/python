@@ -2,6 +2,14 @@
 MCQuest
 Python Reference Script
 
+What is a reference script?
+    + Write key statements-phrases
+    + Write main coding structures
+    + Store useful functions to move between projects
+    
+    
+    
+
     '\':  next line 
     '\n': new line
     '\t': tab
@@ -92,6 +100,7 @@ def print_scroll(output):
         sleep(.02) #seconds
 
 """
+TODO
 Truth tables
 """
 
