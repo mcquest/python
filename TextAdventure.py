@@ -21,6 +21,7 @@ import time
 e = []
 
 # Map list... 1 represents the player
+# mp[0] = 0, mp[3] = 1
 mp = [0,0,0,1,0,0,0,0]
 
 #List of potential yes answers 
