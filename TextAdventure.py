@@ -39,7 +39,7 @@ def Welcome():
     s = ""
     for y in ys:
         s = s+y+".\n"
-    print("Welceome to an adventure through text...\n"
+    Print_scroll("Welceome to an adventure through text...\n"
           "Type one of the following then enter to answer yes:\n" + s)
     
     # Opening Line
@@ -48,7 +48,7 @@ def Welcome():
     choices += start
     # Check user response to start with if statement
     if start == 'i':
-        print("You get up and enter an abandoned super market...")
+        Print_scroll("You get up and enter an abandoned super market...")
         # add a delay
         print (choices)
         time.sleep(2)
@@ -90,6 +90,15 @@ def Left0():
     
 def Right0():
     print()
+    
+#Defining word scroll function (characters print out one at a time)
+def Print_scroll(output):
+    #for every character in the output string
+    for char in output:
+        #print characters one at a time 
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        sleep(.02) #seconds
 
 Welcome()
 
