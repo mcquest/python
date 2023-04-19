@@ -94,14 +94,16 @@ def Right0():
     print()
     
 #Defining word scroll function (characters print out one at a time)
-def Print_scroll(output):
-    #for every character in the output string
-    for char in output:
-        #print characters one at a time 
-        sys.stdout.write(char)
-        sys.stdout.flush()
-        sleep(.02) #seconds
-
+def Print_scroll(phrase):
+    if len(phrase) > 28:
+        #for every character in the output string
+        for char in phrase:
+            #print characters one at a time 
+            sys.stdout.write(char)
+            sys.stdout.flush()
+            sleep(.02) #seconds
+    else:
+        print(phrase)
 Welcome()
 
 
