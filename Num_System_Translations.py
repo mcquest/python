@@ -5,19 +5,27 @@ TODO:
  - Add comments
  - Make more user friendly (list options, ask to enter another number)
 """
-def Base2to10():
-    b =  input("Enter a binary number: ")
+
+b =  input("Enter a binary number: ")
+
+def Base2to10(num0):
+    lnum = []
+    for b in num0:
+      # To note: Strings can also be sequenced as lists 
+      binl += [b]
+    # store variable for length of binary number
     j = 0
+    # holder variable for decimal value
     t = 0
     l = len(b)-1
     while j <= l:
-        if b[l-j] == "1":
-            t = t + int(b[l-j]) * (2 ** j)
+        if binl[l-j] == "1":
+            t = t + (2 ** j)
         j +=1
         
     print(t)
 
-#Base2to10()
+Base2to10(b)
 
 def Base10to2Builtin():
     i = input("Enter an integer: ")
