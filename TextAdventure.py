@@ -9,7 +9,7 @@ to discover and adapt to their environment
 
 TODO
 + Add 3-5 minutes of user experience
-+ Besides printScroll Add relevant list that is iterated through and used in a function
++ Add comments to every line
 """
 
 # Import time and system 
@@ -33,7 +33,7 @@ choices = ["Choices -> "]
 print()
 
 
-# Introductory decisions
+# Function to store Introductory decisions
 def Welcome():
     global choices
     s = ""
@@ -42,7 +42,7 @@ def Welcome():
     Print_scroll("Welceome to an adventure through text...\n"
           "Type one of the following then enter to answer yes:\n" + s)
     
-    # Opening Line
+    # Opening Line print statement & user input holder variable
     start = input("\n You are sitting outside on a bench and it starts to"
                 " rain, \n do you want to use your umbrella or go inside? (Type: u or i) : ")
     choices += start
@@ -55,7 +55,7 @@ def Welcome():
         # function call for stage 1 logic
         Market1()
 
-    #  Opening umbrella user response
+    #  Opening umbrella user response statement
     elif start == 'u':
         print("The umbrella opens...")
         print (choices)
@@ -69,12 +69,14 @@ def Welcome():
         """
         Welcome()
 
-# Stage 1 
+# Stage 1 function definition
 def Market1():
-        # user response is inside1
+        global choices
+        # user response is inside1 variable
         inside1 = input("You see a dim light in the back left corner \n"
                         "and hear a muffled buzz coming from"
                       "the back right. Investigate (left or right): ")
+        choices+=inside1
         if input == "left":
             Left0()
             
