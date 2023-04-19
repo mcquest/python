@@ -31,6 +31,7 @@ Function
 
 import time
 import random
+import sys
 
 #Comment """"""
 #Statement -> Every line of code is a statement
