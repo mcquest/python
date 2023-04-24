@@ -92,8 +92,13 @@ def Left0():
     
 def Right0():
     print()
+
+# Import time and system 
+# classes/libraries to use built in functions from it 
+import sys 
+import time
     
-#Defining word scroll function (characters print out one at a time)
+#Defining word scroll function with a parameter (characters print out one at a time)
 def Print_scroll(phrase):
     if len(phrase) > 28:
         #for every character in the output string
@@ -101,7 +106,7 @@ def Print_scroll(phrase):
             #print characters one at a time 
             sys.stdout.write(char)
             sys.stdout.flush()
-            sleep(.02) #seconds
+            time.sleep(.02) #seconds
     else:
         print(phrase)
 Welcome()
