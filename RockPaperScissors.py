@@ -45,6 +45,6 @@ def Game(decisions):
         print("Incorrect input, try again! \n")
         Game(decisions)
 
-
-print(Game(["rock", "paper", "scissors"]), "\n")
+rps = ["rock", "paper", "scissors"]
+print(Game(rps), "\n")
 print(Game(["giant","wizard", "elf"]))
