@@ -2,7 +2,7 @@
 
 def fname2():
     print("Story here")
-     v2 = input("Choose d, j, or k ? [Then press enter] ")
+    v2 = input("Choose d, j, or k ? [Then press enter] ")
     if v2 == "k":
         fName4()
 
